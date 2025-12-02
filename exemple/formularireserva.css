@@ -1,0 +1,9 @@
+html{
+
+}
+/*
+Oculta tots el elements que tinguen la classe "ocult"
+*/
+.ocult{
+    display: none;
+}
