@@ -29,7 +29,7 @@
         <label for="equipament">Tria un equipament</label>
         <select id="equipament" name="equipament" onChange="mostrarCamps()" required>
             <!-- Opció per defecte que no activa els camps ocults-->
-            <option value="" disabled selected hidden>Selecciona una opció</option><br>
+            <option value="" disabled selected hidden>Selecciona una opció</option>
             <!-- Opcions que activen els seus camps ocults respectius-->
             <option value="Piscina">Piscina</option>
             <option value="Biblioteca">Biblioteca</option>
@@ -40,7 +40,7 @@
             <option value="Pista de tenis">Pista de tenis</option>
             <option value="Aula de cultura">Aula de cultura</option>
             <option value="Casa de la musica">Casa de la musica</option>
-            </select><br>
+            </select><br><br>
             <!-- Camps ocults de la piscina-->
             <div id="piscina" class="ocult">
                 <label for="pis_1">Camps de piscina</label><br>
@@ -85,7 +85,7 @@
             <div id="musica" class="ocult">
                 <label for="mus_1">Camps de casa de la musica</label><br>
                 <input type="text" id="mus_1" name="mus_1" required placeholder="Camps de casa de la musica"><br>
-            </div><br><br>
+            </div><br>
         <label for="comentaris">Comentaris</label><br><br>
         <textarea rows="20" cols="30">Escriu els teus comentaris</textarea><br><br>
         <button class="boto" type="submit"value="Enviar">Enviar</button>
