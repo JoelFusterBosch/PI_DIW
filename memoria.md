@@ -9,3 +9,5 @@ Per a facilitar aquestes reserves hem pensat en afegir un calendari per a que l'
 En el peu de pàgina hem afegit les dades propies del ajuntament com la direccio, horari, telefon, xarxes socials.
 
 Tame hem realitzat la pàgina de forma responsive, adaptada als diferents dispositius.
+
+En quant al disseny del formulari
