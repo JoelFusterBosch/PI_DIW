@@ -10,9 +10,9 @@
 <body>
     <header>
         <img src="./img/ayuntamiento villablanca.png">
-        <h2>Reserva el teu equipament</h2>
+        <h2 class="reserva">Reserva el teu equipament</h2>
     </header>
-    <h2>Formulari de reserva</h2>
+    <h2>Formulari de registre</h2>
     <form id="formularireserva">
         <label for="nom">Nom</label>
         <input type="text" id="nom" name="nom" required placeholder="Escriu el teu nom"><br><br>
@@ -26,6 +26,8 @@
         <input type="number" id="nombre" name="nombre" required placeholder="Escriu el numero de persones"><br><br>
         <label for="data">Data de reserva</label>
         <input type="date" id="data" name="data" required placeholder="Escriu la data de reserva"><br><br>
+        <label for="hora">Hora de reserva</label>
+        <input type="time" id="hora" name="hora" required placeholder="Escriu l'hora de reserva"><br><br>
         <label for="equipament">Tria un equipament</label>
         <select id="equipament" name="equipament" onChange="mostrarCamps()" required>
             <!-- Opció per defecte que no activa els camps ocults-->
@@ -87,9 +89,9 @@
                 <input type="text" id="mus_1" name="mus_1" required placeholder="Camps de casa de la musica"><br>
             </div>
         <label for="comentaris">Comentaris</label><br><br>
-        <textarea rows="20" cols="30">Escriu els teus comentaris</textarea><br><br>
+        <textarea rows="20" cols="50">Escriu els teus comentaris</textarea><br><br>
         <button class="boto" type="submit"value="Enviar">Enviar</button>
-        <input type="reset" value="Reset">
+        <input class="reset"type="reset" value="Reset">
     </form>
 </body>
 <footer>
@@ -103,11 +105,10 @@
             <ul>
                 <li>Avís Legal</li>
                 <li>Política de cookies</li>
-                <li>Política de privacitat</li>
-                <li>Xarxes socials</li>
-                <img src="./img/facebook.png" alt="Facebook">
-                <img src="./img/x.png" alt="Twitter">
-                <img src="./img/insta.png" alt="Instagram">
+                <li>Política de privacitat</li><br>
+                <img class="social"src="./img/facebook.png" alt="Facebook">
+                <img class="social"src="./img/x.png" alt="Twitter">
+                <img class="social"src="./img/insta.png" alt="Instagram">
             </ul>
         </nav>
         <h2>Desenvolupat per Iván Atienza Moya i Joel Fuster Bosch</h2>
