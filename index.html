@@ -22,6 +22,8 @@
         <input type="number" id="nombre" name="nombre" required placeholder="Escriu el numero de persones"><br><br>
         <label for="data">Data de reserva</label>
         <input type="date" id="data" name="data" required placeholder="Escriu la data de reserva"><br><br>
+        <label for="hora">Hora de reserva</label>
+        <input type="time" id="hora" name="hora" required placeholder="Escriu l'hora de reserva"><br><br>
         <label for="equipament">Tria un equipament</label>
         <select id="equipament" name="equipament" onChange="mostrarCamps()" required>
             <!-- Opció per defecte que no activa els camps ocults-->
@@ -37,50 +39,195 @@
             <option value="Aula de cultura">Aula de cultura</option>
             <option value="Casa de la musica">Casa de la musica</option>
             </select><br>
-            <!-- Camps ocults de la piscina-->
+            <!-- Camps ocults de la piscina -->
             <div id="piscina" class="ocult">
-                <label for="pis_1">Camps de piscina</label><br>
-                <input type="text" id="pis_1" name="pis_1" required placeholder="Camps de piscina"><br>
+                <label>Tipus d’ús</label>
+                <select name="pis_tipus">
+                    <option>Lliure</option>
+                    <option>Curs</option>
+                    <option>Carril</option>
+                </select><br>
+            
+                <label>Necessita monitor?</label>
+                <select name="pis_monitor">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select><br>
+            
+                <label>Temps d’ús</label>
+                <select name="pis_temps">
+                    <option>30 minuts</option>
+                    <option>1 hora</option>
+                </select>
             </div>
-            <!-- Camps ocults de la biblioteca-->
+
+            <!-- Camps ocults de la biblioteca -->
             <div id="biblioteca" class="ocult">
-                <label for="bib_1">Camps de biblioteca</label><br>
-                <input type="text" id="bib_1" name="bib_1" required placeholder="Camps de biblioteca"><br>
+                <label>Sala</label>
+                <select name="bib_sala">
+                    <option>Estudi</option>
+                    <option>Ordinadors</option>
+                    <option>Polivalent</option>
+                </select><br>
+            
+                <label>Material necessari</label>
+                <select name="bib_material">
+                    <option>Cap</option>
+                    <option>Projector</option>
+                    <option>Altres</option>
+                </select>
             </div>
-            <!-- Camps ocults del camp de futbol-->
+
+            <!-- Camps ocults del camp de futbol -->
             <div id="futbol" class="ocult">
-                <label for="fut_1">Camps de camp de futbol</label><br>
-                <input type="text" id="fut_1" name="fut_1" required placeholder="Camps de camp de futbol"><br>
+                <label>Tipus d’activitat</label>
+                <select name="fut_activitat">
+                    <option>Entrenament</option>
+                    <option>Partit</option>
+                </select><br>
+            
+                <label>Il·luminació</label>
+                <select name="fut_llums">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select><br>
+            
+                <label>Categoria</label>
+                <select name="fut_categoria">
+                    <option>Infantil</option>
+                    <option>Amateur</option>
+                    <option>Sènior</option>
+                </select>
             </div>
-            <!-- Camps ocults del saló d'actes-->
+
+            <!-- Camps ocults del saló d'actes -->
             <div id="actes" class="ocult">
-                <label for="bib_1">Camps de actes</label><br>
-                <input type="text" id="act_1" name="act_1" required placeholder="Camps de actes"><br>
+                <label>Tipus d’esdeveniment</label>
+                <select name="act_tipus">
+                    <option>Conferència</option>
+                    <option>Concert</option>
+                    <option>Teatre</option>
+                </select><br>
+            
+                <label>Equip de so</label>
+                <select name="act_so">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select><br>
+            
+                <label>Projector</label>
+                <select name="act_projector">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select>
             </div>
-            <!-- Camps ocults del gimnas-->
+
+            <!-- Camps ocults del gimnàs -->
             <div id="gimnas" class="ocult">
-                <label for="gim_1">Camps de gimnas</label><br>
-                <input type="text" id="gim_1" name="gim_1" required placeholder="Camps de gimnas"><br>
+                <label>Zona</label>
+                <select name="gim_zona">
+                    <option>Cardio</option>
+                    <option>Musculació</option>
+                    <option>Classes</option>
+                </select><br>
+            
+                <label>Material</label>
+                <select name="gim_material">
+                    <option>Cap</option>
+                    <option>Esterilla</option>
+                    <option>Mancuernes</option>
+                </select>
             </div>
-            <!-- Camps ocults de la pista de padel-->
+
+            <!-- Camps ocults de la pista de pàdel -->
             <div id="padel" class="ocult">
-                <label for="pad_1">Camps de pista de padel</label><br>
-                <input type="text" id="pad_1" name="pad_1" required placeholder="Camps de pista de padel"><br>
+                <label>Tipus de reserva</label>
+                <select name="pad_tipus">
+                    <option>Partit</option>
+                    <option>Entrenament</option>
+                </select><br>
+            
+                <label>Raquetes necessàries</label>
+                <select name="pad_raquetes">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select><br>
+            
+                <label>Llum nocturna</label>
+                <select name="pad_llums">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select>
             </div>
-            <!-- Camps ocults de la pista de tenis-->
+
+            <!-- Camps ocults de la pista de tenis -->
             <div id="tenis" class="ocult">
-                <label for="ten_1">Camps de pista de tenis</label><br>
-                <input type="text" id="ten_1" name="ten_1" required placeholder="Camps de pista de tenis"><br>
+                <label>Mode de reserva</label>
+                <select name="ten_mode">
+                    <option>Individual</option>
+                    <option>Dobles</option>
+                </select><br>
+            
+                <label>Nivell</label>
+                <select name="ten_nivell">
+                    <option>Iniciació</option>
+                    <option>Mitjà</option>
+                    <option>Avançat</option>
+                </select><br>
+            
+                <label>Llum nocturna</label>
+                <select name="ten_llums">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select>
             </div>
-            <!-- Camps ocults de la aula de la cultura-->
+
+            <!-- Camps ocults de l’aula de cultura -->
             <div id="cultura" class="ocult">
-                <label for="cul_1">Camps de aula de cultura</label><br>
-                <input type="text" id="cul_1" name="cul_1" required placeholder="Camps de aula de cultura"><br>
+                <label>Activitat</label>
+                <select name="cul_activitat">
+                    <option>Taller</option>
+                    <option>Conferència</option>
+                    <option>Reunió</option>
+                </select><br>
+            
+                <label>Disposició</label>
+                <select name="cul_disposicio">
+                    <option>Teatre</option>
+                    <option>Taules</option>
+                    <option>Rodona</option>
+                </select><br>
+            
+                <label>Projector</label>
+                <select name="cul_projector">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select>
             </div>
-            <!-- Camps ocults de la casa de la música-->
+
+            <!-- Camps ocults de la casa de la música -->
             <div id="musica" class="ocult">
-                <label for="mus_1">Camps de casa de la musica</label><br>
-                <input type="text" id="mus_1" name="mus_1" required placeholder="Camps de casa de la musica"><br>
+                <label>Tipus de sala</label>
+                <select name="mus_sala">
+                    <option>Assaig</option>
+                    <option>Gravació</option>
+                </select><br>
+            
+                <label>Instruments</label>
+                <select name="mus_instruments">
+                    <option>Cap</option>
+                    <option>Piano</option>
+                    <option>Bateria</option>
+                </select><br>
+            
+                <label>Microfonia</label>
+                <select name="mus_micro">
+                    <option>No</option>
+                    <option>Sí</option>
+                </select><br>
+            
+                <label>Nombre de músics</label>
+                <input type="number" name="mus_musics" min="1" max="20">
             </div>
         <label for="comentaris">Comentaris</label><br><br>
         <textarea rows="20" cols="30">Escriu els teus comentaris</textarea><br><br>
@@ -88,4 +235,25 @@
         <input type="reset" value="Reset">
     </form>
 </body>
+<footer>
+    <div class="peupagina">
+        <h3>Ajuntament de Villablanca</h3>
+        <p>Direcció: Avinguda del Riu 7, Villablanca</p>
+        <p>Telèfon: 675890231</p>
+        <p>Email: ajuntamentvillablanca@gmail.com</p>
+        <p>Horari: Dilluns a Divendres: 08:00/15:00</p>
+        <nav>
+            <ul>
+                <li>Avís Legal</li>
+                <li>Política de cookies</li>
+                <li>Política de privacitat</li><br>
+                <img class="social"src="./img/facebook.png" alt="Facebook">
+                <img class="social"src="./img/x.png" alt="Twitter">
+                <img class="social"src="./img/insta.png" alt="Instagram">
+            </ul>
+        </nav>
+        <h2>Desenvolupat per Iván Atienza Moya i Joel Fuster Bosch</h2>
+        <h2>Tots els drets reservats 2025</h2>
+    </div>
+</footer>
 </html>
