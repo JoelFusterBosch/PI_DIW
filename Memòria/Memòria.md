@@ -28,7 +28,7 @@ Este projecte tracta de redissenyar un apartat de la pàgina web d'un ajuntament
 ## Tecnologies utilitzades
 ### HTML
 <p align= "center">
-    <img src="./Memòria/logos/HTML.png" alt="HTML" width="300"/>
+    <img src="./logos/HTML.png" alt="HTML" width="300"/>
  </p>
 <p align="center"><em>Fig 1: Logo de HTML</em></p> 
 
@@ -40,7 +40,7 @@ En este projecte l'hem utlitzat perque ens facilita la creació del contingut de
 
 ### CSS
 <p align= "center">
-    <img src="./Memòria/logos/CSS.png" alt="CSS" width="300"/>
+    <img src="./logos/CSS.png" alt="CSS" width="300"/>
  </p>
 <p align="center"><em>Fig 2: Logo de CSS</em></p> 
 
@@ -52,7 +52,7 @@ Hem usat CSS per a donar-li estil al HTML i per a poder ocultar els camps especi
 
 ### JavaScript
 <p align= "center">
-    <img src="./Memòria/logos/JavaScript.png" alt="JavaScript" width="300"/>
+    <img src="./logos/JavaScript.png" alt="JavaScript" width="300"/>
  </p>
 <p align="center"><em>Fig 3: Logo de JavaScript</em></p> 
 JavaScript (abreujat comunment JS) és un llenguatge de programació interpretat, dialecte de l'estàndard ECMAScript. Es definix com orientat a objectes,​ basat en prototips, imperatiu, feblement tipat i dinàmic.
@@ -63,7 +63,7 @@ Hem utilitzat JavaScript per a donar-li dinamisme a la pàgina web de HTML per a
 
 ### VSCode
 <p align= "center">
-    <img src="./Memòria/logos/VSCode.png" alt="VSCode" width="300"/>
+    <img src="./logos/VSCode.png" alt="VSCode" width="300"/>
  </p>
 <p align="center"><em>Fig 4: Logo de VSCode</em></p> 
 
@@ -74,7 +74,7 @@ Hem usat VSCode degut a que és el IDE que més utilitzem per a la resta de mòd
 
 ### GitHub
 <p align= "center">
-    <img src="./Memòria/logos/Github.png" alt="VSCode" width="300"/>
+    <img src="./logos/Github.png" alt="VSCode" width="300"/>
  </p>
 <p align="center"><em>Fig 5: Logo de Github</em></p>
 
@@ -341,7 +341,7 @@ Ja amb tota la informació necessaria del HTML es deuria de vore així:
 ```
 I l'aplicació es deuria de vore així:
 <p align= "center">
-    <img src="./Memòria/Resultats/Resultat HTML.png" alt="HTML" width="300"/>
+    <img src="./Resultats/Resultat HTML.png" alt="HTML" width="300"/>
  </p>
 <p align="center"><em>Fig 7: Resultat del fitxer HTML</em></p> 
 
@@ -702,7 +702,7 @@ nav li{
 
 I deuria de vor de la següent forma:
 <p align= "center">
-    <img src="./Memòria/Resultats/Resultats CSS.png" alt="CSS" width="600"/>
+    <img src="./Resultats/Resultats CSS.png" alt="CSS" width="600"/>
  </p>
 <p align="center"><em>Fig 8: Resultat del fitxer CSS</em></p> 
 Amb el CSS tenim el mateix problema de funcionalitat que el HTML, sols el CSS li dona aparença al HTML, però no li dona les propietats d'una pàgina web dinàmica que li proporciona JavaScript, però si que el CSS ens ajudara en un apartat del JavaScript que vorem en el següent apartat.
@@ -732,7 +732,7 @@ Oculta tots el elements que tinguen la classe "ocult"
 Amb això els camps estaran ocults, però no els podrem tornar a vore, si no fem que JavaScript els mostre i els oculte quan siga convenient com es mostra en este video:
 <p align= "center">
     <video width="320" controls>
-      <source src="./Memòria/videos/HTML sense JS.mp4" type="video/mp4">
+      <source src="./videos/HTML sense JS.mp4" type="video/mp4">
     </video>
  </p>
 <p align="center"><em>Video 1: Camps ocults sense poder vore'ls</em></p> 
@@ -768,7 +768,7 @@ Ara ja es poden mostrar les opcions quan les seleccionem, però encara queda un 
 
 <p align= "center">
     <video width="320" controls>
-      <source src="./Memòria/videos/Resultat incorrecte.mp4" type="video/mp4">
+      <source src="./videos/Resultat incorrecte.mp4" type="video/mp4">
     </video>
  </p>
 <p align="center"><em>Video 2: Resultat de la web de forma incorrecta</em></p> 
@@ -877,7 +877,7 @@ window.addEventListener('DOMContentLoaded', () => {
 I és deuria de vore de la següent forma:
 <p align= "center">
     <video width="320" controls>
-      <source src="./Memòria/videos/Resultat correcte.mp4" type="video/mp4">
+      <source src="./videos/Resultat correcte.mp4" type="video/mp4">
     </video>
  </p>
 <p align="center"><em>Video 3: Resultat de la web de forma correcta</em></p>
@@ -888,23 +888,23 @@ En este últim aparta anem a combinar tots els apartats vistos en anterioritat, 
 
 Per la part del HTML tenim la estructura
 <p align= "center">
-   <img src="./Memòria/Resultats/Resultat HTML.png" alt="HTML" width="300"/>
+   <img src="./Resultats/Resultat HTML.png" alt="HTML" width="300"/>
 </p>
 Per la part del CSS tenim l'estil
 <p align= "center">
-    <img src="./Memòria/Resultats/Resultats CSS.png" alt="CSS" width="600"/>
+    <img src="./Resultats/Resultats CSS.png" alt="CSS" width="600"/>
  </p>
 I per la part del JavaScript tenim la funcionalitat:
 <p align= "center">
     <video width="320" controls>
-      <source src="./Memòria/videos/Resultat correcte.mp4" type="video/mp4">
+      <source src="./videos/Resultat correcte.mp4" type="video/mp4">
     </video>
 </p>
 
 Aquestes 3 tecnologies van a fusionar-se per a transformar la pàgina web que com bé hem dit en anterioritat, cadascú cubrira els inconvenients d'un i altre per a trensformar la pàgna web en el resultat final amb funcionalitat, estructura i estil:
 <p align= "center">
     <video width="1200" controls>
-      <source src="./Memòria/videos/Resultat final.mp4" type="video/mp4">
+      <source src="./videos/Resultat final.mp4" type="video/mp4">
     </video>
 </p>
 
